@@ -1,2 +1,5 @@
-# neuropythy-tutorials
-A set of tutorial notebooks for neuropythy.
+# Neuropythy Tutorials
+
+A set of tutorial notebooks for [neuropythy](https://github.com/noahbenson/neuropythy).
+
+
