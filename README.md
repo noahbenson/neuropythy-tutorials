@@ -2,22 +2,25 @@
 
 A set of tutorial notebooks for [neuropythy](https://github.com/noahbenson/neuropythy).
 
-**Author**: Noah C. Benson &lt;[nben@nyu.edu](mailto:nben@nyu.edu)&gt;
+**Author**: Noah C. Benson &lt;[nben@uw.edu](mailto:nben@uw.edu)&gt;
 
 This github repository encodes a set of tutorials for the neuropythy software
-library. This repository is currently under construction, but as of 2020-05-26, the
-ROI-drawing tutorial is available.
+library. The tutorials themselves are in notebooks (`tutorials/*.ipynb` in this
+repository) that can be executed inside of a [docker](https://docker.com/)
+container. In order to run this tutorial, you will either need to install and
+configure neuropythy yourself (see the [neuropythy GitHub
+page](https://github.com/noahbenson/neuropythy)), or you will need to have
+docker installed. If you are new to Python, then Docker is generally easier.
 
-The tutorials themselves are in notebooks (`work/*ipynb` in this repository) that
-can be executed inside of a [docker](https://docker.com/) container. In order to
-run this tutorial, you will need to have docker installed (or, you can install all
-the python dependencies locally, but docker is generally easier). In addition, if you
-want to use a Human Connectome Project (HCP) subject as your example subject, you
-will also need a set of Amazon S3 credentials from the HCP. To obtain these
+In addition, if you want to use a Human Connectome Project (HCP) subject as an
+example subject, or if you want to follow along with any HCP tutorial, you will
+also need a set of Amazon S3 credentials from the HCP. To obtain these
 credentials, visit their [database site](https://db.humanconnectome.org/),
 register for the site, then request Amazon S3 credentials for the 1200 subject
 release (see the ["Getting HCP Credentials" section](#credentials) below for
 detailed instructions).
+
+### Running the Tutorials
 
 To run the tutorial, make sure that your local port 8888 is free, then perform
 the following:
@@ -58,13 +61,14 @@ neuropythy-tutorials    |     Or copy and paste one of these URLs:
 neuropythy-tutorials    |         http://(58e2ccd31ba9 or 127.0.0.1):8888/?token=e2f1bd8b37c875799a77198bc240af1b32e1ebc967e04801
 ```
 
-This final line is telling you how to connect to the notebook server. Basically, copy
-everything starting with the "`:8888/`" to the end of the line and paste it into your
-browser after "`localhost`", so in this case, you would point your browser to
-`localhost:8888/?token=e2f1bd8b37c875799a77198bc240af1b32e1ebc967e04801`. This should
-connect you to the notebook server. Click on the `work` directory then on the
-`tutorial.ipynb` file to open the notebook. From there, follow the text and
-code in the notebook.
+This final line is telling you how to connect to the notebook server. Basically,
+copy everything starting with the "`:8888/`" to the end of the line and paste it
+into your browser after "`localhost`", so in this case, you would point your
+browser to
+`localhost:8888/?token=e2f1bd8b37c875799a77198bc240af1b32e1ebc967e04801`. This
+should connect you to the notebook server. Click on the `tutorials` directory
+then on any of the files that end in `.ipynb` to open the tutorial
+notebooks. From there, follow the text and code in the notebook.
 
 
 ### <a name="credentials"></a> Getting HCP Credentials
