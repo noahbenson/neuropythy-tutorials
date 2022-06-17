@@ -2,7 +2,7 @@ version: '3'
 services:
    neuropythy_tutorials:
       container_name: neuropythy-tutorials
-      image: nben/neuropythy:latest
+      build: .
       command: notebook
       ports:
          - "8888:8888"
